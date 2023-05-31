@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>User Registration Form</h1>
+    <form id="registrationForm" onsubmit="validateForm(event)">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <select id="countryCode" name="countryCode">
+          <option value="+1">+1</option>
+          <option value="+91">+91</option>
+          <option value="+44">+44</option>
+        </select>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+      </div>
+      <div class="form-group">
+        <label for="sex">Sex:</label>
+        <input type="radio" id="male" name="sex" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="female" required>
+        <label for="female">Female</label>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <select id="day" name="day" required>
+          <option value="">Day</option>
+          <!-- Add day options from 1 to 31 -->
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <!-- Add more options up to 31 -->
+        </select>
+        <select id="month" name="month" required>
+          <option value="">Month</option>
+          <!-- Add month options from January to December -->
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <!-- Add more options up to December -->
+        </select>
+        <select id="year" name="year" required>
+          <option value="">Year</option>
+          <!-- Add year options from 1950 to 2023 -->
+          <option value="1950">1950</option>
+          <option value="1951">1951</option>
+          <!-- Add more options up to 2023 -->
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="languages">Languages Known:</label>
+        <input type="checkbox" id="english" name="languages" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="marathi" name="languages" value="marathi">
+        <label for="marathi">Marathi</label>
+        <input type="checkbox" id="hindi" name="languages" value="hindi">
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="tamil" name="languages" value="tamil">
+        <label for="tamil">Tamil</label>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

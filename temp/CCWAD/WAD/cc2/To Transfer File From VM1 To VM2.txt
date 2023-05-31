@@ -1,0 +1,30 @@
+** To Transfer File From VM1 To VM2:
+ -Commands To Execute on VM1:
+  1. ifconfig
+  2. ls
+  3. touch filename.extension
+  4. cat filename.extension
+  5. nano filename.extension
+  6. cat filename.extension
+  7. scp filename.extension vagrant@ip_address_of_VM2:/home/vagrant
+
+ -Commands To Execute on VM2:
+  1. ifconfig
+  2. ls  OR ls /home/vagrant
+  3. cat filename.extension
+  
+
+** To Transfer File From VM2 To VM1:
+ -Commands To Execute on VM2:
+  1. ifconfig
+  2. ls
+  3. touch filename.extension
+  4. cat filename.extension
+  5. nano filename.extension
+  6. cat filename.extension
+  6. scp filename.extension vagrant@ip_address_of_VM1:/home/vagrant
+
+ -Commands To Execute on VM1:
+  1. ifconfig
+  2. ls  OR ls /home/vagrant
+  3. cat filename.extension

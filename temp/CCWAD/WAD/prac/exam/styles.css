@@ -1,0 +1,91 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color */
+  body {
+    background-color: #f5f5f5;
+  }
+  
+  /* Style header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  /* Style navigation */
+  nav {
+    background-color: #444;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style main section */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    /* Adjust header size for smaller screens */
+    header h1 {
+      font-size: 20px;
+    }
+  
+    /* Adjust navigation layout for smaller screens */
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust section margin for smaller screens */
+    section {
+      margin-bottom: 10px;
+    }
+  }
+  
